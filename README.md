@@ -67,7 +67,7 @@ ssh-copy-id bigred@192.168.XXX.XXX
 * 下載 GitHub 資料
 
 ```
-git clone 'https://github.com/Oscar-Young/DT-alpine'
+git clone 'https://github.com/jason890202/DT-alpine_ubuntu'
 ```
 
 * 檢查是否有下載到本地
