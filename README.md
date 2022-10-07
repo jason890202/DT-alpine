@@ -46,25 +46,13 @@ sudo nano /etc/hosts
 
 * * * 
 
-* 去除 SSH yes/no 的提示
-
-```
-echo "StrictHostKeyChecking no" >> /etc/ssh/ssh_config
-```
-
-* 重啟 SSH service
-
-```
-systemctl restart ssh
-```
-
 * 產生 SSH 公私鑰
 
 ```
 ssh-keygen -t rsa -P '' 
 ```
 
-* 複製公鑰至各台電腦，以下供參考
+* 複製公鑰至叢集的各台電腦，以下供參考
 
 ```
 ssh-copy-id Name@Hosts
@@ -86,6 +74,12 @@ git clone 'https://github.com/Oscar-Young/DT-alpine'
 
 ```
 ls -al
+```
+
+* 執行install.sh進行系統的初始化配置
+
+```
+sudo ./DT-alpine/install.sh
 ```
 
 * 修改 DT-alpine/web/config/hosts，請設定好自己的 IP，以下供參考
